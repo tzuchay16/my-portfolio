@@ -20,6 +20,11 @@ body {
   line-height: 1.6;
 }
 
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Navbar */
 
 nav {
@@ -53,10 +58,6 @@ nav a.active {
 
 /* Page content */
 
-div {
-  max-width: 800px;
-}
-
 h1 {
   font-size: 2rem;
   margin: 2rem auto 0.5rem;
@@ -86,7 +87,6 @@ ul {
   padding-left: 2.5rem;
 }
 
-
 a {
   color: var(--blue);
 }
@@ -95,15 +95,20 @@ a:hover {
   color: var(--blue-bright);
 }
 
-/* Project cards */
+/* ---------- Project cards (Projects.jsx) ---------- */
 
-div > div {
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.project-card {
   background: var(--paper-raised);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 1.25rem;
-  margin: 0 2rem 1rem;
-  max-width: 700px;
 }
 
 /*Forms (Contact.jsx) */
