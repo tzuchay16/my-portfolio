@@ -1,0 +1,157 @@
+:root {
+  --ink: #16283d;
+  --paper: #f4f6f9;
+  --paper-raised: #ffffff;
+  --line: #cfd9e3;
+  --blue: #2f6690;
+  --blue-bright: #3e9cb8;
+  --amber: #d98e3f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--paper-raised);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: var(--paper);
+}
+
+nav a.active {
+  color: var(--ink);
+  background: var(--paper);
+  border-bottom: 2px solid var(--blue-bright);
+}
+
+/* Page content */
+
+div {
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem auto 0.5rem;
+  padding: 0 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1.5rem auto 0.5rem;
+  padding: 0 2rem;
+  color: var(--blue);
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+p,
+ul {
+  margin: 0 auto 1rem;
+  padding: 0 2rem;
+  max-width: 700px;
+}
+
+ul {
+  padding-left: 2.5rem;
+}
+
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--blue-bright);
+}
+
+/* Project cards */
+
+div > div {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 0 2rem 1rem;
+  max-width: 700px;
+}
+
+/*Forms (Contact.jsx) */
+
+form {
+  padding: 0 2rem;
+  max-width: 500px;
+}
+
+form > div {
+  border: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  background: none;
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  background: var(--ink);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--blue);
+}
