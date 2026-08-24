@@ -12,15 +12,13 @@ export default function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projectDetails" element={<ProjectDetail />} />
-        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
 }
-
-
