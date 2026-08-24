@@ -27,8 +27,8 @@ body {
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
-
 /* Navbar */
 
 nav {
